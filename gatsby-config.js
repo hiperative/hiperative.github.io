@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Hiperative - Software & Design Studio`,
+    description: `Hiperative is a Barcelona based software & design studio. We build fot the web.`,
+    keywords: `hiperative, hiperative studio, hiperative.com, software, design, ui, ux, user interface, user experience, uiux, apps, branding, brand, development, web, studio, node.js, javascript, js, react, ecommerce, webgl,  applications, webapp, webapps, nodejs, elasticsearch, couchbase, couchdb, npm, ipfs, iplf, dapp, dapps, decentralised, decentralized`,
+    author: `@rafaelllycan`,
+    url: `https://hiperative.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,7 +12,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/img`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -18,17 +20,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Hiperative Studio`,
+        short_name: `Hiperative`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#f1f1f1`,
+        theme_color: `#f1f1f1`,
+        display: `standalone`,
+        icon: `src/assets/img/Hiperative_Logo.png`, // This path is relative to the root of the site.
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    `gatsby-plugin-offline`,
   ],
 }
